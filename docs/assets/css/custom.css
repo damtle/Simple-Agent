@@ -1,0 +1,302 @@
+:root {
+  --theme-color: #2f855a;
+  --base-font-size: 16px;
+  --base-line-height: 1.85;
+  --content-max-width: 980px;
+}
+
+/* 全局中文字体 */
+body {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "PingFang SC",
+    "Hiragino Sans GB",
+    "Microsoft YaHei",
+    "Noto Sans CJK SC",
+    Arial,
+    sans-serif;
+
+  color: #2f3b46;
+  background: #ffffff;
+}
+
+/* 正文区域 */
+.markdown-section {
+  max-width: var(--content-max-width);
+  padding: 36px 48px 80px;
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+}
+
+/* 一级标题 */
+.markdown-section h1 {
+  margin-top: 0;
+  margin-bottom: 28px;
+  padding-bottom: 14px;
+
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1.35;
+
+  color: #253746;
+  border-bottom: 1px solid #e8ecef;
+}
+
+/* 二级标题 */
+.markdown-section h2 {
+  margin-top: 52px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 1.4;
+
+  color: #253746;
+  border-bottom: 1px solid #edf0f2;
+}
+
+/* 三级标题 */
+.markdown-section h3 {
+  margin-top: 38px;
+  margin-bottom: 16px;
+
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  color: #304657;
+}
+
+/* 普通段落 */
+.markdown-section p {
+  margin: 16px 0;
+  text-align: justify;
+}
+
+/* 加粗内容 */
+.markdown-section strong {
+  color: #253746;
+  font-weight: 700;
+}
+
+/* 链接 */
+.markdown-section a {
+  color: #2f855a;
+  text-decoration: none;
+}
+
+.markdown-section a:hover {
+  text-decoration: underline;
+}
+
+/* 行内代码 */
+.markdown-section code {
+  padding: 2px 6px;
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    Menlo,
+    monospace;
+
+  font-size: 0.92em;
+
+  color: #b4535a;
+  background: #f6f7f8;
+  border-radius: 4px;
+}
+
+/* 代码块 */
+.markdown-section pre {
+  margin: 24px 0;
+  padding: 40px 24px 22px;
+
+  background: #f7f8fa;
+  border: 1px solid #e8eaed;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.markdown-section pre > code {
+  padding: 0;
+
+  color: inherit;
+  background: transparent;
+}
+
+/* 引用块 */
+.markdown-section blockquote {
+  margin: 24px 0;
+  padding: 12px 20px;
+
+  color: #54606b;
+  background: #f7faf8;
+  border-left: 4px solid var(--theme-color);
+}
+
+/* 图片 */
+.markdown-section img {
+  display: block;
+  max-width: 92%;
+  margin: 28px auto 10px;
+}
+
+/* 图片说明 */
+.markdown-section div[align="center"] p {
+  margin-top: 8px;
+
+  font-size: 0.92rem;
+  color: #6b7680;
+  text-align: center;
+}
+
+/* 表格 */
+.markdown-section table {
+  display: table;
+  width: 100%;
+  margin: 24px 0;
+}
+
+.markdown-section th {
+  color: #253746;
+  background: #f4f6f7;
+}
+
+/* 列表 */
+.markdown-section ul,
+.markdown-section ol {
+  margin: 14px 0;
+}
+
+.markdown-section li {
+  margin: 7px 0;
+}
+
+/* 左侧栏 */
+.sidebar {
+  width: 300px;
+  padding-top: 18px;
+
+  font-size: 14px;
+
+  border-right: 1px solid #edf0f2;
+}
+
+.sidebar-nav > ul > li > a {
+  font-weight: 600;
+}
+
+/* 复制入口始终可见，也能由键盘和触屏访问。 */
+.markdown-section .docsify-copy-code-button {
+  opacity: 1;
+  font-size: 0.8rem;
+  border-radius: 0 8px 0 4px;
+}
+
+.markdown-section .docsify-copy-code-button:focus-visible {
+  outline: 2px solid #253746;
+  outline-offset: 2px;
+}
+
+.markdown-section pre::after {
+  left: 24px;
+  right: auto;
+}
+
+.sidebar ul li a {
+  color: #4f5f6d;
+}
+
+/* 目录中的“部分”标题：没有链接时也保持清晰的层级 */
+.sidebar-nav > ul > li > strong {
+  display: block;
+  margin-top: 20px;
+  padding: 8px 12px 6px;
+
+  color: #253746;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.sidebar-nav > ul > li > ul {
+  margin-top: 4px;
+}
+
+.sidebar ul li.active > a {
+  color: var(--theme-color);
+  font-weight: 600;
+  border-right: 3px solid var(--theme-color);
+}
+
+/* 部分导读页中的章节路线表 */
+.markdown-section table td:first-child a {
+  font-weight: 600;
+}
+
+/* 项目名称 */
+.app-name-link {
+  color: #34495e !important;
+  font-weight: 600;
+}
+
+/* 顶部导航 */
+.app-nav {
+  font-size: 14px;
+}
+
+/* 字数统计 */
+.docsify-count {
+  color: #7a858e;
+}
+
+/* 小屏幕适配 */
+@media screen and (max-width: 768px) {
+  /* 手机端从菜单访问仓库，避免角标遮住阅读时间。 */
+  .github-corner {
+    display: none !important;
+  }
+
+  .sidebar-toggle {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .markdown-section table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .markdown-section p code {
+    overflow-wrap: anywhere;
+  }
+
+  .markdown-section {
+    padding: 24px 20px 60px;
+    font-size: 15px;
+  }
+
+  .markdown-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .markdown-section h2 {
+    margin-top: 42px;
+    font-size: 1.45rem;
+  }
+
+  .markdown-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .markdown-section img {
+    max-width: 100%;
+  }
+
+  .sidebar {
+    width: 280px;
+  }
+}

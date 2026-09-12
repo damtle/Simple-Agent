@@ -1,0 +1,2 @@
+Simple Agent 是一个用于教学的极简 LLM Agent 包。
+它把模型调用、Action、Parser、工具注册、状态和 Agent Loop 分成清晰模块。

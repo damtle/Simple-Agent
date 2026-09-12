@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Simple Agent：从最小实现开始理解智能体的构造与运行原理"
+  >
+
+  <meta name="author" content="Simple Agent Project">
+
+  <title>Simple Agent</title>
+
+  <!-- Docsify Vue 主题 -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/themes/vue.css"
+  >
+
+  <!-- 自定义样式 -->
+  <link
+    rel="stylesheet"
+    href="./assets/css/custom.css?v=20260912"
+  >
+</head>
+
+<body>
+  <div id="app">文档加载中……</div>
+
+  <script>
+    window.$docsify = {
+      // 左侧显示的项目名称
+      name: 'Simple Agent',
+
+      // 项目 GitHub 仓库
+      repo: 'https://github.com/damtle/Simple-Agent',
+
+      // 加载 docs/_sidebar.md
+      loadSidebar: true,
+
+      // 加载 docs/_navbar.md
+      loadNavbar: true,
+
+      // 加载 docs/_coverpage.md
+      coverpage: true,
+
+      // 首页显示封面后，仍然继续显示正文
+      onlyCover: false,
+
+      // 自动提取当前页面的二级、三级标题
+      subMaxLevel: 3,
+
+      // 章节位于 part-* 子目录，正文链接相对当前文档解析
+      relativePath: true,
+
+      // 切换页面后自动滚动到顶部
+      auto2top: true,
+
+      // Markdown 已包含一级标题，避免 Docsify 再自动生成重复标题
+      autoHeader: false,
+
+      // 找不到页面时使用 Docsify 默认提示
+      notFoundPage: false,
+
+      // 站点基础路径
+      basePath: './',
+
+      // 修改浏览器标题格式
+      formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}',
+
+      // 搜索配置
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: '搜索文档',
+        noData: '没有找到相关内容',
+        depth: 4,
+        hideOtherSidebarContent: false
+      },
+
+      // 字数统计配置
+      count: {
+        countable: true,
+        position: 'top',
+        margin: '10px',
+        float: 'right',
+        fontsize: '0.9em',
+        color: 'rgb(90, 90, 90)',
+        language: 'chinese'
+      },
+
+      // 复制代码配置
+      copyCode: {
+        buttonText: '复制',
+        errorText: '复制失败',
+        successText: '已复制'
+      },
+
+      // 分页导航
+      pagination: {
+        previousText: '上一节',
+        nextText: '下一节',
+        crossChapter: true,
+        crossChapterText: true
+      },
+
+      // 外部链接在新窗口打开
+      externalLinkTarget: '_blank',
+
+      // 路由模式
+      routerMode: 'hash',
+
+      // 页面顶部名称始终返回当前文档站首页
+      nameLink: '#/',
+
+      // 小屏幕下把顶部导航折叠进侧边栏
+      mergeNavbar: true
+    };
+  </script>
+
+  <!-- Docsify 主程序 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/docsify.min.js"></script>
+
+  <!-- 全文搜索 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/plugins/search.min.js"></script>
+
+  <!-- 图片缩放 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/plugins/zoom-image.min.js"></script>
+
+  <!-- 代码复制 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@3.0.2/dist/docsify-copy-code.min.js"></script>
+
+  <!-- 字数与预计阅读时间 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-count@1.1.0/dist/countable.min.js"></script>
+
+  <!-- 上一页、下一页 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2.10.1/dist/docsify-pagination.min.js"></script>
+
+  <!-- Python 语法高亮 -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-python.min.js"></script>
+
+  <!-- Bash 语法高亮 -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-bash.min.js"></script>
+
+  <!-- JSON 语法高亮 -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-json.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simple-agent"
+version = "1.0.0"
+description = "A minimal educational LLM agent package"
+readme = "README.md"
+authors = [
+  { name = "Simple Agent Contributors" },
+]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+  "openai>=1.0",
+]
+
+[project.urls]
+Homepage = "https://damtle.github.io/Simple-Agent/"
+Repository = "https://github.com/damtle/Simple-Agent"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8",
+  "python-dotenv>=1.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["simple_agent*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

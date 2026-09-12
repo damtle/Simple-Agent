@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simple-agent"
+version = "0.1.0"
+description = "A minimal educational LLM agent package"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "openai",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "python-dotenv",
+]
+
+[tool.setuptools.packages.find]
+include = ["simple_agent*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
